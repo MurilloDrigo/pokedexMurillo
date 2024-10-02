@@ -1,5 +1,5 @@
 <script setup>
-const pokemon = defineProps(["name","xp","height","img", "loading"])
+const pokemon = defineProps(["name","xp","height","img", "loading", "hp", "attack", "defense", "specialAttack", "specialDefense","speed","id", "type"])
 </script>
 
 <template>
@@ -15,13 +15,58 @@ const pokemon = defineProps(["name","xp","height","img", "loading"])
 
             <div class="row">
                 <section class="col">
-                    <strong>XP:</strong>
-                    <span>{{ pokemon.xp }}</span>
+                    <strong>HP: </strong>
+                    <span>{{pokemon.hp}}</span>
                 </section>
                 <section class="col">
-                    <strong>Altura:</strong>
+                    <strong>XP: </strong>
+                    <span>{{ pokemon.xp }}</span>
+                </section>
+                
+            </div>
+            <div class="row">
+                <section class="col">
+                    <strong>Altura: </strong>
+                    <span>{{pokemon.height}} cm</span>
+                </section>
+                <section class="col">
+                    <strong>Attack: </strong>
+                    <span>{{ pokemon.xp }}</span>
+                </section>
+            </div>
+            <div class="row">
+                
+                <section class="col">
+                    <strong>Defense: </strong>
                     <span>{{pokemon.height}}</span>
                 </section>
+                <section class="col">
+                    <strong>Speed: </strong>
+                    <span>{{pokemon.speed}}</span>
+                </section>
+            </div>
+            <div class="row">
+                
+                <section class="col">
+                    <strong>Special Defense: </strong>
+                    <span>{{pokemon.specialDefense}}</span>
+                </section>
+                <section class="col">
+                    <strong>SpecialAttack: </strong>
+                    <span>{{pokemon.specialAttack}}</span>
+                </section>
+            </div>
+            <div class="row">
+
+                <section class="col">
+                    <strong>Número: </strong>
+                    <span>{{pokemon.id}}</span>
+                </section>
+                <section class="col">
+                    <strong>Tipo: </strong>
+                    <span>{{pokemon.type}}</span>
+                </section>
+                
             </div>
             
         </div>

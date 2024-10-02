@@ -1,5 +1,5 @@
 <script setup>
-const pokemon = defineProps(["name", "urlBaseSvg"])
+const pokemon = defineProps(["name", "num", "urlBaseSvg"])
 </script>
 
 <template> 
@@ -7,8 +7,9 @@ const pokemon = defineProps(["name", "urlBaseSvg"])
         <div class="col-4">
 
             <div class="card p-2 mb-3 cardListPokemon">
-                <p>{{ pokemon.name }}</p>
+                <p class="text-center">{{ pokemon.name }}</p>
                 <img :src="urlBaseSvg" class="card-img-top" alt="pokemon image" height="140"/> 
+                <p class="text-center">Nº {{ pokemon.num }}</p>
             </div>
         </div>
     
