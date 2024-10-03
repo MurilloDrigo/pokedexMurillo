@@ -45,7 +45,7 @@ import PokemonEvolutions from "@/components/PokemonEvolutions.vue";
   // Função para buscar os Pokémons na API
   const fetchPokemons = async () => {
     try {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=649");
       const data = await response.json();
       pokemons.value = data.results;
     } catch (error) {

@@ -1,6 +1,6 @@
-# Pokémon Search App
+# Pokedex App
 
-Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vite**, que permite aos usuários pesquisar Pokémons por nome, número. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
+Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vite**, que permite aos usuários pesquisar Pokémons por nome ou número. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
 
 ## Tecnologias Utilizadas
 
@@ -24,6 +24,18 @@ Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vit
 
 ## Estrutura do Projeto
 
+### Utilizando a Pokedex
+
+## Desktop
+![Utilizando a Pokedex](./src/assets/md/1.png)
+![Utilizando a Pokedex](./src/assets/md/2.png)
+![Utilizando a Pokedex](./src/assets/md/3.png)
+![Utilizando a Pokedex](./src/assets/md/4.png)
+
+## Mobile
+![Utilizando a Pokedex](./src/assets/md/5.gif)
+
+
 ### Components
 
 - **CardPokemonSelected.vue**: Exibe detalhes do Pokémon selecionado.
@@ -35,6 +47,9 @@ Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vit
 - **HomeView.vue**: A principal view do aplicativo, onde os componentes são montados e a lógica de busca e filtragem é realizada.
 
 ## Como Rodar o Projeto
+
+
+
 
 ### Pré-requisitos
 
