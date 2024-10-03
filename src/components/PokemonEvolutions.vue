@@ -36,13 +36,13 @@ const fetchEvolutions = async () => {
 
     // Função recursiva para extrair todas as evoluções com nome, nível mínimo, trigger e ID da espécie
     const extractEvolutions = async (chain: any, evoArray: any[] = []) => {
-      const speciesId = chain.species.url.split("/").slice(-2, -1)[0]; // Extrair o ID da espécie da URL
+      const speciesId = chain.species.url.split("/").slice(-2, -1)[0]; 
 
       evoArray.push({
         species_name: chain.species.name,
         min_level: chain.evolution_details[0]?.min_level || null,
         trigger: chain.evolution_details[0]?.trigger?.name || null,
-        imageUrl: `${imageUrlBase}${speciesId}.svg`, // Gerar a URL da imagem do Pokémon com o ID extraído
+        imageUrl: `${imageUrlBase}${speciesId}.svg`,
       });
 
       setTimeout(() => {
@@ -80,14 +80,12 @@ fetchEvolutions();
       <h5 class="text-center text-white">Evoluções</h5>
         <div class="d-flex justify-content-center flex-wrap mt-4 gap-3 ">
             <div class="card overflow-hidden p-5 bg-dark bg-gradient " v-for="evolution in evolutions" :key="evolution.species_name">
-              <!-- Exibir imagem do Pokémon -->
               <img class="text-center" :src="evolution.imageUrl" :alt="evolution.species_name" height="250" />
 
               <h4 class="text-center text-capitalize text-white">
 
                   {{ evolution.species_name }} 
               </h4> 
-              <!-- Exibir nome, nível mínimo e trigger -->
               <span class="card-body text-center text-white" v-if="evolution.min_level">Nível mínimo: {{ evolution.min_level }}</span>
               <span class="card-body text-center text-white" v-if="evolution.trigger">Trigger: {{ evolution.trigger }}</span>
               </div>

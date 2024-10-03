@@ -26,6 +26,12 @@ import PokemonEvolutions from "@/components/PokemonEvolutions.vue";
     types: { type: { name: string } }[];
   }
 
+  interface PokemonDetails {
+  name: string;
+  types: { type: { name: string } }[];
+}
+
+
   // Definição de estados reativos
   const pokemons = ref<Pokemon[]>([]);  // Especificando o tipo correto
   const urlBaseSvg = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
@@ -33,10 +39,13 @@ import PokemonEvolutions from "@/components/PokemonEvolutions.vue";
   const pokemonSelected = ref<PokemonDetail | null>(null);  // Definindo o tipo detalhado do Pokémon
   const loading = ref(false);
 
+  //Busca Por Tipo
+
+
   // Função para buscar os Pokémons na API
   const fetchPokemons = async () => {
     try {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=649&offset=0");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
       const data = await response.json();
       pokemons.value = data.results;
     } catch (error) {
