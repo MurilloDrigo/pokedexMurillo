@@ -1,6 +1,6 @@
 # Pokémon Search App
 
-Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vite**, que permite aos usuários pesquisar Pokémons por nome, número ou tipo. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
+Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vite**, que permite aos usuários pesquisar Pokémons por nome, número. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
 
 ## Tecnologias Utilizadas
 
