@@ -29,7 +29,6 @@ Este é um aplicativo de busca de Pokémons construído com Vue.js 3, que permit
 - **CardPokemonSelected.vue**: Exibe detalhes do Pokémon selecionado.
 - **ListPokemons.vue**: Lista os Pokémons com base na busca e filtro selecionado.
 - **PokemonEvolutions.vue**: Mostra as evoluções do Pokémon.
-- **PokemonTypeFilter.vue**: Dropdown para selecionar o tipo de Pokémon.
 
 ### Views
 
