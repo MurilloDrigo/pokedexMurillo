@@ -1,17 +1,17 @@
 # Pokémon Search App
 
-Este é um aplicativo de busca de Pokémons construído com Vue.js 3, que permite aos usuários pesquisar Pokémons por nome, número ou tipo. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
+Este é um aplicativo de busca de Pokémons construído com **Vue.js 3** e **Vite**, que permite aos usuários pesquisar Pokémons por nome, número ou tipo. O app também exibe detalhes do Pokémon selecionado, como estatísticas e evoluções.
 
 ## Tecnologias Utilizadas
 
 - **Vue.js 3**: Framework JavaScript progressivo.
+- **Vite**: Ferramenta de build e bundler ultrarrápido.
 - **PokeAPI**: API pública usada para obter dados sobre Pokémons.
 - **TypeScript**: Utilizado para tipagem estática no código Vue.
 
 ## Funcionalidades
 
 - Pesquisar Pokémons por nome ou número.
-- Filtrar Pokémons por tipo.
 - Visualizar detalhes do Pokémon selecionado, como:
   - Nome
   - ID
@@ -39,22 +39,28 @@ Este é um aplicativo de busca de Pokémons construído com Vue.js 3, que permit
 ### Pré-requisitos
 
 - [Node.js](https://nodejs.org/) (versão 12 ou superior)
-- [Vue CLI](https://cli.vuejs.org/)
+- [Vite](https://vitejs.dev/)
 
 ### Instalação
 
-```sh
+1. Clone o repositório:
+
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 ```
 
-```sh
+2. Navegue até o diretório do projeto:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+3. Instale as dependências:
+
+```bash
 npm install
 ```
-
-```sh
+4. Rodando a Aplicação
+ 
+```bash
 npm run dev
-```
-
-```sh
-npm run build
 ```
